@@ -13,6 +13,6 @@ print("Hello, World!")
 """
 This is a comment
 written in
-more than just one line
+more than just one line (multi-line comments)
 """
 print("Hello, World!")

@@ -1,13 +1,13 @@
 class Person: 
 
-    def initt(self,name):
+    def __init__(self,name):
         self.name=name
 
 
 class Student(Person):
 
-    def initt(self,name,gpa):
-        super().initt(name)
+    def __init__(self,name,gpa):
+        super().__init__(name)
         self.gpa=gpa
 
     def display(self):

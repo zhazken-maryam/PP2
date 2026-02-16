@@ -1,21 +1,21 @@
-class Person: 
+class Person:
+    
+    def __init__(self, name):
+        self.name = name   # store the person's name
 
-    def __init__(self,name):
-        self.name=name
 
-
-class Student(Person):
-
-    def __init__(self,name,gpa):
-        super().__init__(name)
-        self.gpa=gpa
+class Student(Person):   # Student inherits from Person
+    
+    def __init__(self, name, gpa):
+        super().__init__(name)   # call Person constructor to set name
+        self.gpa = gpa           # store the student's GPA
 
     def display(self):
-        print(f"Student: {self.name}, GPA: {self.gpa}")
+        print(f"Student: {self.name}, GPA: {self.gpa}")   # print student info
 
 
-name,gpa=input().split()
+name, gpa = input().split()   # get name and GPA from user
 
-s=Student(name,gpa)
+s = Student(name, gpa)        # create Student object
 
-s.display()
+s.display()                   # call display method

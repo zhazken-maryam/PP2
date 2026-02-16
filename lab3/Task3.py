@@ -1,19 +1,37 @@
-words = {
-"ZERO":"0","ONE":"1","TWO":"2","THREE":"3","FOUR":"4",
-"FIVE":"5","SIX":"6","SEVEN":"7","EIGHT":"8","NINE":"9"
+# convert letters to digits
+d = {
+    "ZER":"0","ONE":"1","TWO":"2","THR":"3","FOU":"4",
+    "FIV":"5","SIX":"6","SEV":"7","EIG":"8","NIN":"9"
 }
+
+# reverse dictionary
+r = {v:k for k,v in d.items()}
 
 s = input()
 
-for w in words:
-    s = s.replace(w, words[w])
+# find operator
+if "+" in s:
+    op = "+"
+elif "-" in s:
+    op = "-"
+else:
+    op = "*"
 
-result = str(eval(s))
+a, b = s.split(op)
 
-rev = {v:k for k,v in words.items()}
+# function to convert
+def to_num(x):
+    res = ""
+    for i in range(0, len(x), 3):
+        res += d[x[i:i+3]]
+    return int(res)
 
-answer = ""
-for digit in result:
-    answer += rev[digit]
+# calculate
+res = eval(str(to_num(a)) + op + str(to_num(b)))
 
-print(answer)
+# convert back
+out = ""
+for digit in str(res):
+    out += r[digit]
+
+print(out)

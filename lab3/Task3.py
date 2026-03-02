@@ -24,7 +24,7 @@ a, b = s.split(op)   # split into two numbers
 def to_int(x):
     num = ""
     for i in range(0, len(x), 3):
-        num += d[x[i:i+3]]
+        num += d[x[i:i+3]] #from i to i+3
     return int(num)
 
 

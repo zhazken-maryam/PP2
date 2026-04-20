@@ -1,4 +1,4 @@
--- Procedure 1: insert new user or update phone if user already exists
+
 CREATE OR REPLACE PROCEDURE upsert_u(p_name VARCHAR, p_phone VARCHAR)
 LANGUAGE plpgsql
 AS $$
@@ -11,7 +11,7 @@ END;
 $$;
 
 
--- Procedure 2: insert many users, validate data, show incorrect data
+
 CREATE OR REPLACE PROCEDURE loophz(p_user VARCHAR[], p_phone VARCHAR[])
 LANGUAGE plpgsql
 AS $$
@@ -35,7 +35,7 @@ END;
 $$;
 
 
--- Procedure 3: delete by username or phone
+
 CREATE OR REPLACE PROCEDURE del_user(p VARCHAR)
 LANGUAGE plpgsql
 AS $$

@@ -1,4 +1,4 @@
--- Function 1: return all records matching a pattern
+
 CREATE OR REPLACE FUNCTION records(p TEXT)
 RETURNS TABLE(
     out_id INTEGER,
@@ -16,7 +16,6 @@ END;
 $$ LANGUAGE plpgsql;
 
 
--- Function 2: pagination with LIMIT and OFFSET
 CREATE OR REPLACE FUNCTION pagination(lim INT, offs INT)
 RETURNS TABLE(
     out_id INTEGER,

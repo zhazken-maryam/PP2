@@ -31,7 +31,7 @@ base = os.path.dirname(__file__)
 img_path = os.path.join(base, "images")
 
 # загружаем картинку циферблата
-face = pygame.image.load(os.path.join(img_path, "clock.png")).convert_alpha()
+face = pygame.image.load(os.path.join(img_path, "mickey.png")).convert_alpha()
 
 # подгоняем картинку под размер окна
 face = pygame.transform.scale(face, (W, H))
@@ -40,7 +40,7 @@ face = pygame.transform.scale(face, (W, H))
 def get_hand_end(center, angle_deg, length):
     # переводим угол в радианы
     # -90 нужен, чтобы 0 градусов смотрел вверх
-    angle_rad = math.radians(angle_deg - 90)
+    angle_rad = math.radians(angle_deg + 90)
 
     # вычисляем конец стрелки
     x = center[0] + length * math.cos(angle_rad)

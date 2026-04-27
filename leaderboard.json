@@ -10,6 +10,16 @@
         "distance": 3004
     },
     {
+        "name": "nnnnn",
+        "score": 3100,
+        "distance": 3000
+    },
+    {
+        "name": "gogo",
+        "score": 3100,
+        "distance": 3000
+    },
+    {
         "name": "\u044c\u0448\u044c\u0448\u044c",
         "score": 3089,
         "distance": 3009
@@ -30,23 +40,13 @@
         "distance": 3002
     },
     {
-        "name": "\u044c\u0448\u044c\u0448\u044c",
-        "score": 1758,
-        "distance": 1718
+        "name": "nnnnn",
+        "score": 3020,
+        "distance": 3000
     },
     {
-        "name": "\u0431",
-        "score": 1711,
-        "distance": 1671
-    },
-    {
-        "name": "\u044c\u0448\u044c\u0448\u044c",
-        "score": 1246,
-        "distance": 1206
-    },
-    {
-        "name": "\u0431",
-        "score": 956,
-        "distance": 896
+        "name": "gogo",
+        "score": 2786,
+        "distance": 2666
     }
 ]
